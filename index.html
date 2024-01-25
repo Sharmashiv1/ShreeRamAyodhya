@@ -39,8 +39,38 @@
         </div>
       </nav>
 
+    <!-- Clock -->
+  <style>
+        #time{
+          
+          color: #c21313e0;
+          font-size: medium;
+         }
+       
+    </style>
+    
+   <div class="containerClock">
+        <h2><span id="time"></span> </h2>
+    </div>
+          
+          
+    <script>
+        function updateTime() {
+            time = new Date();
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(updateTime, 1000)
+    </script>
+
+
+<!-- Clock End -->
+
+
+    
+    
+
       <div class="alert alert-success" role="alert">
-        A effort success new temple of lord shree Ram accomplished!
+        Effort success new temple of lord shree Ram accomplished!
       </div>
 
       <!-- Crousel -->
